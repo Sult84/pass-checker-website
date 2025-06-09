@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Certificate</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="style.css" />
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Enter your password"
+      onkeyup="checkStrength()"
+    />
+    <div id="feedback"></div>
+    <div id="strengthBar" class="bar"></div>
+
+    <div id="nameSection" style="display: none;">
+      <input type="text" id="name" placeholder="Enter your name" />
+      <button onclick="generateCertificate()">Generate Certificate</button>
+    </div>
+
+    <div id="certificate" style="margin-top: 20px;"></div>
+
+    <div id="actions" style="margin-top: 20px; display: none;">
+     
+      <button onclick="window.print()">Print</button>
+    </div>
+  </div>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>

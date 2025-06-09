@@ -1,0 +1,58 @@
+body {
+  font-family: 'Playfair Display', serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-right: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.bar {
+  height: 10px;
+  width: 100%;
+  background: #ddd;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
