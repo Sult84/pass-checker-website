@@ -63,17 +63,3 @@ function generateCertificate() {
 
   actions.style.display = "block";
 }
-
-function downloadPDF() {
-  const element = document.getElementById("certificateContent");
-
-  const options = {
-    margin: 0.5,
-    filename: 'password_certificate.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 4 },
-    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-  };
-
-  html2pdf().set(options).from(element).save();
-}
